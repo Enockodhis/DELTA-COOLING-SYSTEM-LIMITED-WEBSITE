@@ -86,7 +86,7 @@
 
 /* --------------------------css for small screen--------------------------------------- */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 360px) {
   .Footer {
     padding: 20px;
     height: 10rem;

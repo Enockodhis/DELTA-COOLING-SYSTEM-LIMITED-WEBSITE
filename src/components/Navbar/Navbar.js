@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/deltalogo.png";
 import { Link } from "react-router-dom";
-import { IoMenu } from "react-icons/io5";
-import { IoClose } from "react-icons/io5";
+import { TiThMenu } from "react-icons/ti";
+import { RiCloseFill } from "react-icons/ri";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -52,12 +52,12 @@ const Navbar = () => {
 
       {/* ----Mobile Screen Navbar */}
       {showMenu ? (
-        <IoClose
+        <RiCloseFill
           className="mobileMenu-Icon"
           onClick={() => setShowMenu(false)}
         />
       ) : (
-        <IoMenu className="mobileMenu-Icon" onClick={() => setShowMenu(true)} />
+        <TiThMenu className="mobileMenu-Icon" onClick={() => setShowMenu(true)} />
       )}
         <ul className='navMenu' style={{display: showMenu? 'flex':'none'}}>
         <li

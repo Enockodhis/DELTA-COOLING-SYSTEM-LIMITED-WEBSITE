@@ -1,0 +1,173 @@
+#contactPage{
+ margin: 0 auto;
+  /* min-height: calc(100vh - 4rem); */
+  width: 100vw;
+  max-width: 70rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+}
+.contactInfo{
+    padding: '20px';
+    border-radius: '8px';
+    max-width: '600px';
+    margin: 'auto';
+    width: 60%;
+    height: 90vh;
+}
+.contactInfo h2{
+    text-align: end;
+    margin-bottom: '20px';
+    font-style: normal;
+    font-size: 25px;
+}
+.contactDetails{
+    line-height: 1.6;
+}
+.phoneNumber, .emailAddress, .website {
+    color: blue;
+    margin-top: 20px;
+  }
+.numberList, .emailList{
+    list-style-type: none;
+    padding-left: 0;
+}
+.web-link{
+    color: blue;
+    text-decoration: 'none';
+}
+.contactIcon{
+    margin-right: 10px;
+    color: green; /* Customize the color of icons */
+    width: 20px;
+    height: 20px;
+    margin-bottom: -5px;
+  }
+.contact-Location{
+  margin-top: 10px;
+}
+.contact-Location h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: blue;
+  }
+.contact-Location p {
+    margin: 5px 0;
+  }
+.mapLocation{
+    margin-top: 30px;
+}
+.locationIconMain{
+    display: inline-flex;
+    align-items: center;
+    margin-left: -15px;
+}
+.locationIcon1{
+    font-size: 60px;
+    color: red;
+    margin-right: 5px;
+}
+.locationIcon2{
+    font-size: 60px;
+    color: blue;
+    margin-right: 5px;
+}
+.direction-link{
+    color: blue;
+    font-weight: bold;
+}
+ 
+.contactForm{
+    border-radius: '8px';
+    font-size: medium;
+    font-weight: 300;
+    width: 70%;
+    height: 90vh;
+    padding: 1rem;
+}
+.form-label{
+    color: blue;
+    letter-spacing: 0.8px;
+    display: inline-block;
+    font-weight: 700;
+    padding: 0.5rem 0.7rem;
+}
+.contactFrm{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 60rem;
+}
+.form-control{
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.7rem;
+    padding: 0.5rem 1rem;
+    border: 0.4px solid black;
+}
+.submit{
+    margin-left: -20px;
+}
+.submitBtn{
+    background: blue;
+    padding: 0.75rem 3.5rem;
+    font-size: max(1vw, 16px);
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    z-index: 2; /* Ensure button is above everything */
+    margin: 2rem;
+    color: white;
+}
+button:hover {
+    background-color: green;
+}
+
+/* --------------------------css for small screen--------------------------------------- */
+
+@media screen and (max-width:600px) {
+    #contactPage{
+       display: flex;
+       flex-direction: column;
+    }
+    .contactInfo{
+      width: 80%;
+    }
+    .contactForm{
+      width: 80%;
+      margin-top: -50px;
+    }
+    .contactFrm{
+      display: flex;
+      margin-left: -30px;
+    }
+   .contact-Location p {
+      font-size: 13px;
+    }
+    .contactInfo h2{
+        text-align: center;
+    }
+    .mapLocation{
+        margin-top: 10px;
+        padding: 7px;
+    }
+    .locationIcon1{
+        font-size: 40px;
+    }
+    .locationIcon2{
+        font-size: 40px;
+    }
+    .direction-link{
+        font-weight: bold;
+    }
+}
+
+ 

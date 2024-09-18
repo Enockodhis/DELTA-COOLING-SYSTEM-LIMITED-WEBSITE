@@ -1,0 +1,316 @@
+#services{
+  margin: 0 auto;
+  /* min-height: calc(100vh - 4rem); */
+  width: 100vw;
+  max-width: 67.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+/* --- Services Title --- */
+.services-title h6{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 2.5rem;
+  color: green;
+}
+.services-title h7{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: blue;
+    font-weight: 700;
+    line-height: 55px;
+}
+.services-title p{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+/* ----- Range of Business Activities ----- */
+.business-container {
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 67.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .icon{
+    color: green;
+  }
+  .business-container h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: blue;
+    font-weight: 700;
+    line-height: 55px;
+    font-style: normal;
+  }
+  
+  .business-container p {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .business-card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+  }
+  
+  .business-card .icon {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #007BFF;
+  }
+  
+  .business-card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  
+/* --- Detailed Services Info --- */
+.servicesInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 65px auto;
+    gap: 50px;
+}
+.servicesAbout{
+    flex: 1;
+    width: 700px;
+    margin: 0px 25px;
+}
+.servicesAbout h5{
+    font-size: 26.5px;
+    margin-bottom: 20px;
+    color: blue;
+}
+.servicesAbout p{
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: black;
+}
+.servicesImage{
+    flex: 1;
+    width: 400px;
+    margin: auto;
+}
+img{
+    object-fit: cover;
+    height: 26rem;
+    width: 26rem;
+    border-radius: 10px;
+}
+/* Why Choose Us Section */
+.why-choose-us-container {
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: blue;
+    font-style: normal;
+  }
+  
+  .reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .reason-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .reason-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .icon-container {
+    font-size: 2.5rem;
+    color: blue;
+    margin-bottom: 15px;
+  }
+  
+  .reason-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  .reason-description {
+    font-size: 1rem;
+    color: #666;
+  }
+
+  /* ---- Brand Names */
+.brands-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.brand-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-style: normal;
+}
+
+.brand-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.brand-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.brand-item {
+    width: 16.5%;
+    margin: 10px 0;
+    transition: transform 0.3s;
+}
+
+.brand-item img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: contain;
+    /* filter: grayscale(100%); */
+    transition: filter 0.3s ease;
+}
+
+.brand-item:hover img {
+    /* filter: grayscale(0%); */
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .brand-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-item {
+        width: 90%;
+    }
+}
+
+/* --------------------------css for small screen--------------------------------------- */
+
+@media screen and (max-width:600px) {
+  #services{
+    margin-top: -15px;
+  }
+  /* --- Services Title --- */
+   .services-title h6{
+    font-size: 1.25rem;
+    margin-left: 6px;
+    }
+    .services-title h7{
+      font-size: 25px;
+      margin-left: 10px;
+    }
+    .services-title p{
+      font-size: 1.1rem;
+      line-height: 1.1rem;
+      margin-left: 10px;
+      margin-top: 0px;
+    }
+    .business-container p {
+      margin-top: -5px;
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      margin-bottom: 20px;
+    }
+    /* ----- Range of Business Activities ----- */
+    .business-container {
+      font-size: 1rem;
+      line-height: 1rem;
+    }
+    .business-container h2 {
+      font-size: 1rem;
+      line-height: 1rem;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    .business-container p {
+      margin-top: 3px;
+      font-size: 1rem;
+      line-height: 1rem;
+      margin-bottom: 15px;
+    }
+    /* --- Detailed Services Info --- */
+    .servicesInfo{
+      gap: 0px;
+      margin: 20px auto;
+      /* border: 2px solid red; */
+    }
+    .servicesAbout{
+      width: 300px;
+      margin: 0px 15px;
+      /* border: 2px solid green; */
+    }
+    .servicesAbout h5{
+      font-size: 13.5px;
+      margin-bottom: 10px;
+    }
+   .servicesAbout p{
+      font-size: 14px;
+      line-height: 1;
+      margin-bottom: 40px;
+      color: black;
+   }
+  .servicesImage{
+      width: 100px;
+      /* border: 2px solid red; */
+      margin-left: 15px;
+  }
+  img{
+      object-fit: cover;
+      height: 15rem;
+      width: 14rem;
+      border-radius: 10px;
+  }
+}
+
+
+
+  
+ 

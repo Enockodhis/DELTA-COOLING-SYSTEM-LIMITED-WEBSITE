@@ -1,0 +1,105 @@
+#Home {
+  height: calc(100vh - 8rem);
+  width: 100vw;
+  max-width: 100vw;
+  max-height: calc(100vh - 8rem);
+  margin: 0 auto;
+  position: relative;
+  /* margin: 30px auto; */
+  overflow: hidden;
+}
+
+/* .background-video {
+  position: fixed;
+  /* top: -8rem; 
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+} */
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.home-contents {
+  position: relative;
+  z-index: 1;
+  color: white;
+  /* text-align: center; */
+  padding-top: 15vw;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 10%;
+  left: 6vw;
+  animation: fadeIn 3s;
+  font-weight: bolder;
+}
+
+.home-contents h3 {
+  font-weight: 500;
+  color: white;
+  font-size: max(4.5vw, 22px);
+  margin-bottom: 20px;
+}
+.home-contents p {
+  color: white;
+  font-size: 20px;
+}
+
+.home-contents button {
+  padding: 10px 20px;
+  font-size: max(1vw, 16px);
+  font-weight: 500;
+  padding: 1vw 2.3vw;
+  border-radius: 50px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 2; /* Ensure button is above everything */
+  margin-top: 30px;
+}
+
+button:hover {
+  background-color: green;
+}
+
+/* --------------------------css for small screen--------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  #Home {
+    height: 58vh;
+  }
+  video {
+    width: 100%;
+    height: 58vh;
+  }
+  .home-contents {
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: start;
+    left: 2vw;
+  }
+  .home-contents h3 {
+    font-size: max(3.5vw, 20px);
+  }
+  .home-contents p {
+    font-size: 15px;
+  }
+  .home-contents button {
+    font-size: max(0.5vw, 12px);
+    padding: 1.5vw;
+    width: 25vw;
+  }
+}

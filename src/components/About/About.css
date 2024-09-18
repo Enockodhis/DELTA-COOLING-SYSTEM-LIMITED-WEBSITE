@@ -1,0 +1,111 @@
+#About {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 65rem;
+  margin: 0 auto;
+}
+.aboutHeader h4 {
+  color: green;
+  font-size: 55px;
+  text-align: center;
+  margin-top: 35px;
+}
+.contentInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 65px auto;
+  gap: 50px;
+}
+.contentAbout {
+  flex: 1;
+  width: 700px;
+  margin: 0px 25px;
+}
+.contentAbout h5 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: blue;
+}
+.contentAbout p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: black;
+}
+.contentAbout button {
+  padding: 10px 20px;
+  font-size: max(1vw, 16px);
+  font-weight: 500;
+  padding: 1vw 2.3vw;
+  border-radius: 50px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 2; /* Ensure button is above everything */
+  margin-top: 30px;
+}
+button:hover {
+  background-color: green;
+}
+.contentImage {
+  flex: 1;
+  width: 400px;
+  margin: auto;
+}
+img {
+  object-fit: cover;
+  height: 25rem;
+  width: 25rem;
+  border-radius: 10px;
+}
+
+/* --------------------------css for small screen--------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  #About {
+    margin-top: -30px;
+  }
+  .aboutHeader h4 {
+    font-size: 28px;
+  }
+  .contentInfo {
+    margin: 10px auto;
+    gap: 0px;
+    /* border: 2px solid black; */
+  }
+  .contentAbout {
+    margin: 0px 15px;
+    /* border: 2px solid red; */
+    padding: 15px;
+    width: 40%;
+  }
+  .contentImage {
+    /* border: 2px solid blue; */
+    object-fit: cover;
+    width: 40%;
+    margin-left: 15px;
+  }
+  .contentImage img {
+    object-fit: cover;
+    height: 15rem;
+    width: 13rem;
+    border-radius: 10px;
+  }
+  .contentAbout h5 {
+    font-size: 14.5px;
+  }
+  .contentAbout p {
+    font-size: 13px;
+  }
+  .contentAbout button {
+    padding: 10px 20px;
+    font-size: max(0.5vw, 10px);
+    font-weight: 500;
+    padding: 0.8vw 2vw;
+    margin-top: 0px;
+    width: 40%;
+  }
+}

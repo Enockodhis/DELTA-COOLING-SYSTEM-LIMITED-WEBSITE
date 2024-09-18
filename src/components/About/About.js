@@ -17,28 +17,25 @@ const About = () => {
           <p>
             Delta Cooling Systems Ltd is a leading mechanical engineering firm,
             recognized across East and Central Africa for supplying top-quality
-            commercial refrigeration and air conditioning. We specialize in the
-            design, supply, installation, and commissioning of air conditioning,
-            mechanical ventilation systems, cold rooms, and general mechanical
-            works.
+            commercial refrigeration and air conditioning...
           </p>
           <Link to="/services">
             <button>Learn More</button>
           </Link>
         </div>
         <div className="contentImage">
-          <img src={industrialFurnace} />
+          <img src={industrialFurnace} alt="Industrial furnace" />
         </div>
       </div>
       <div className="contentInfo">
         <div className="contentImage">
-          <img src={commercialHVACunit} />
+          <img src={commercialHVACunit} alt="Commercial HVAC unit" />
         </div>
         <div className="contentAbout">
           <h5>Our Vision</h5>
           <p>
             To become one of the leading and most reliable mechanical
-            contracting company in East and Central Africa.
+            contracting company...
           </p>
         </div>
       </div>
@@ -47,12 +44,11 @@ const About = () => {
           <h5>Mission Statement</h5>
           <p>
             Guided by our vision, we will deliver high-quality, cost-effective
-            projects on time, enhancing client satisfaction through continuous
-            improvement in quality, service, and environmental practices.
+            projects...
           </p>
         </div>
         <div className="contentImage">
-          <img src={residentialFurnace} />
+          <img src={residentialFurnace} alt="Residential furnace" />
         </div>
       </div>
     </section>

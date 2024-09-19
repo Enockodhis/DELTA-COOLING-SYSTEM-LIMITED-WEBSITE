@@ -234,7 +234,7 @@ img{
 
 /* --------------------------css for small screen--------------------------------------- */
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:360px) {
   #services{
     margin-top: -15px;
   }

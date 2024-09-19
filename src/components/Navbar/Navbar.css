@@ -120,7 +120,7 @@ h2{
 
 /* --------------------------css for small screen--------------------------------------- */
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:360px) {
     .logo{
         object-fit: cover;
         height: 5rem;

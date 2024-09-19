@@ -27,12 +27,12 @@ const About = () => {
           </Link>
         </div>
         <div className="contentImage">
-          <img src={industrialFurnace} />
+          <img src={industrialFurnace} alt="industrialFurnace" />
         </div>
       </div>
       <div className="contentInfo">
         <div className="contentImage">
-          <img src={commercialHVACunit} />
+          <img src={commercialHVACunit} alt="commercialHVACunit" />
         </div>
         <div className="contentAbout">
           <h5>Our Vision</h5>
@@ -52,7 +52,7 @@ const About = () => {
           </p>
         </div>
         <div className="contentImage">
-          <img src={residentialFurnace} />
+          <img src={residentialFurnace} alt="residentialFurnace" />
         </div>
       </div>
     </section>

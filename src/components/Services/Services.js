@@ -105,12 +105,12 @@ const Services = () => {
           </p>
         </div>
         <div className="servicesImage">
-          <img src={outdoorunit} />
+          <img src={outdoorunit} alt="outdoorunit" />
         </div>
       </div>
       <div className="servicesInfo">
         <div className="servicesImage">
-          <img src={ductwork} />
+          <img src={ductwork} alt="ductwork" />
         </div>
         <div className="servicesAbout">
           <h5>AIR HANDLERS AND DUCTWORK</h5>
@@ -137,12 +137,12 @@ const Services = () => {
           </p>
         </div>
         <div className="servicesImage">
-          <img src={splitoutdoorunit} />
+          <img src={splitoutdoorunit} alt="splitoutdoorunit" />
         </div>
       </div>
       <div className="servicesInfo">
         <div className="servicesImage">
-          <img src={residentialAc} />
+          <img src={residentialAc} alt="residentialAc" />
         </div>
         <div className="servicesAbout">
           <h5>RESIDENTIAL AC</h5>
@@ -170,7 +170,7 @@ const Services = () => {
           </p>
         </div>
         <div className="servicesImage">
-          <img src={hvacdiffuser} />
+          <img src={hvacdiffuser} alt="hvacdiffuser" />
         </div>
       </div>
       {/* Why Choose Us Section */}

@@ -1,8 +1,7 @@
 .Footer{
     width: 100vw;
-    height: 13rem;
     display: flex;
-    padding: 50px;
+    padding: 5rem;
     font-weight: 300;
     font-size: small;
     background: green;
@@ -11,7 +10,6 @@
 .Footer-Left{
     display: flex;
     flex-direction: column;
-    height: 20vh;
     width: 40vw;
 }
 .Footer-details{
@@ -84,15 +82,17 @@
 
 /* --------------------------css for small screen--------------------------------------- */
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:600px) {
     .Footer{
-      padding: 20px;
-      height: 10rem;
+      display: flex;
+      justify-content: center;
+      justify-content: space-between;
     }
     .Footer-Left{
-        width: 70vw;
-        height: 19vh;
         /* border: 2px solid red; */
+        width: 100%;
+        margin-left: -40px;
+        margin-top: -15px;
     }
     .footerLogo{
         object-fit: cover;
@@ -100,28 +100,42 @@
         width: 6rem;
     }
     .Footer-orgName{
-       margin-left: -10px;
-       padding: 15px;
+       padding: 0px;
+       margin-left: 2px;
        /* border: 2px solid black; */
+       width: 100%;
+       margin-top: 5px;
     }
     .Footer-orgName h1{
-        font-size: 14.5px;
+        font-size: 11.5px;
     }
     .underline-footer{
-        width: 100%;
+        max-width: 100%;
     }
     .Footer-orgName h2{
-        font-size: 10px;
+        font-size: 7.5px;
     }
     .Footer-copyright{
         margin-top: 15px;
-        font-size: 10.5px;
+        font-size: 13px;
+
+    }
+    .Footer-Right{
+        margin-right: -40px;
+        gap: 3px;
+        margin-top: -15px;
+        /* border: 2px solid black; */
     }
     .footer-menu{
         width: 21vw;
-        height: 19vh;
-        font-size: 15px;
+        font-size: 10px;
         margin-left: 5%;
+        gap: 0px;
+        padding: 3px;
+    }
+    .navbar-icon {
+        font-size: 11px;
+        margin-right: 3px
     }
  }
  

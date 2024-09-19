@@ -1,7 +1,7 @@
 #About{
   overflow: hidden;
-  width: 100vw;
-  max-width: 65rem;
+  /* width: 100vw; */
+  max-width: 80%;
   margin: 0 auto;
 
 }

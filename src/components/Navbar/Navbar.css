@@ -1,9 +1,10 @@
 .navbar{
-    height: 8rem;
+    /* height: 8rem; */
     width: 100vw;
-    max-width: 95rem;
+    /* max-width: 95rem; */
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 1rem 10rem;
+    /* padding: 5rem 2rem; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,8 +15,8 @@
 }
 .logo{
     object-fit: cover;
-    height: 7rem;
-    width: 10rem;
+    height: 8rem;
+    width: 12rem;
 }
 .organizationName{
     display: flex;
@@ -23,10 +24,14 @@
     justify-content: center;
     align-items: center;
     /* border: 2px solid red; */
+    gap: 0.5rem;
 }
 h1{
     color: #008000;
     font-weight: bold;
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
 }
 .underline{
     /* border: 1px solid red; */
@@ -82,7 +87,7 @@ h2{
 .navMenu{
     position: absolute;
     top: 0rem;
-    right: 27.5rem;
+    right: 0.4rem;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -91,8 +96,6 @@ h2{
     display: block;
     font-size: 25px;
     font-weight: 700;
-    height: 100vh;
-    width: 0%;
     min-width: 12rem;
     background-color: green;
     color: white;
@@ -120,38 +123,28 @@ h2{
 
 /* --------------------------css for small screen--------------------------------------- */
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:600px) {
+    .navbar{
+      padding: 5px;
+    }
     .logo{
         object-fit: cover;
-        height: 5rem;
-        width: 7rem;
+        height: 6rem;
+        width: 8rem;
     }
     .organizationName{
-        padding: 1px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 25px;
+         display: none;
     }
-    .organizationName h1{
-       font-size: 19px;
-    }
-
-    .organizationName h2{
-        font-size: 12.5px;
-    }
-
+    
     .mobileMenu-Icon{
      display: flex;
-     padding: 2px;
+     margin-right: 20px;
      margin-top: 25px;
      margin-left: 2px;
    } 
-   
    .navbar-menu{
     display: none;
    } 
-
    .navbar-icon {
     font-size: 13px;
     margin-right: 5px; 

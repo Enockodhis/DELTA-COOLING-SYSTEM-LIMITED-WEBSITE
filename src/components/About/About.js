@@ -17,10 +17,7 @@ const About = () => {
           <p>
             Delta Cooling Systems Ltd is a leading mechanical engineering firm,
             recognized across East and Central Africa for supplying top-quality
-            commercial refrigeration and air conditioning. We specialize in the
-            design, supply, installation, and commissioning of air conditioning,
-            mechanical ventilation systems, cold rooms, and general mechanical
-            works.
+            commercial refrigeration and air conditioning.
           </p>
           <Link to="/services">
             <button>Learn More</button>

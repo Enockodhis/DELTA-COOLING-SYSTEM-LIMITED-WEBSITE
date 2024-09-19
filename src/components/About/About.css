@@ -1,13 +1,12 @@
 #About{
   overflow: hidden;
-  /* width: 100vw; */
   max-width: 80%;
   margin: 0 auto;
 
 }
 .aboutHeader h4{
   color: green;
-  font-size: 55px;
+  font-size: 40px;
   text-align: center;
   margin-top: 35px;
 }
@@ -21,8 +20,7 @@
 }
 .contentAbout{
     flex: 1;
-    width: 700px;
-    margin: 0px 25px;
+    /* border: 2px solid red; */
 }
 .contentAbout h5{
     font-size: 30px;
@@ -53,53 +51,60 @@ button:hover {
   }
 .contentImage{
     flex: 1;
-    width: 400px;
-    margin: auto;
+    /* border: 2px solid black; */
+    width: 100%;
+    height: auto;
 }
-img{
+.contentImage img{
     object-fit: cover;
-    height: 25rem;
-    width: 25rem;
+    width: 42rem;
+    height: 42rem;
     border-radius: 10px;
 }
 
 /* --------------------------css for small screen--------------------------------------- */
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:600px) {
     #About{
         margin-top: -30px;
     }
     .aboutHeader h4{
-        font-size: 28px;
+        font-size: 17px;
     }
     .contentInfo{
-        margin: 10px auto;
-        gap: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: 20px auto;
+        gap: 20px;
         /* border: 2px solid black; */
     }
     .contentAbout{
-        margin: 0px 15px;
         /* border: 2px solid red; */
-        padding: 15px;
-        width: 40%;
+        padding: 10px;
     }
     .contentImage{
         /* border: 2px solid blue; */
         object-fit: cover;
-        width: 40%;
         margin-left: 15px;
+        /* margin: 0 auto 20px auto; */
+        text-align: center;
     }
     .contentImage img{
         object-fit: cover;
-        height: 15rem;
-        width: 13rem;
+        height: 17rem;
+        width: 14rem;
         border-radius: 10px;
     }
     .contentAbout h5{
-        font-size: 14.5px;
+        font-size: 14px;
+        line-height: 1;
     }
     .contentAbout p{
-        font-size: 13px;
+        font-size: 14px;
+        line-height: 1;
+        gap: 15px;
     }
     .contentAbout button{
         padding: 10px 20px;
@@ -107,6 +112,6 @@ img{
         font-weight: 500;
         padding: 0.8vw 2vw;
         margin-top: 0px;
-        width: 40%;
+        width: 100%;
     }
 }  

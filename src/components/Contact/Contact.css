@@ -3,6 +3,8 @@
   /* min-height: calc(100vh - 4rem); */
   width: 100vw;
   max-width: 70rem;
+  height: 100vh;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 0 1rem;

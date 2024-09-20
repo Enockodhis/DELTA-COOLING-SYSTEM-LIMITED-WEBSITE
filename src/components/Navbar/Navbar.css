@@ -5,6 +5,7 @@
     margin: 0 auto;
     padding: 1rem 15rem;
     /* padding: 5rem 2rem; */
+    gap: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -3,9 +3,8 @@
     width: 100vw;
     /* max-width: 95rem; */
     margin: 0 auto;
-    padding: 1rem 15rem;
+    padding: 1rem 5rem;
     /* padding: 5rem 2rem; */
-    gap: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;

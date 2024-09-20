@@ -1,34 +1,38 @@
 #services{
   margin: 0 auto;
-  /* min-height: calc(100vh - 4rem); */
-  width: 100vw;
-  max-width: 67.5rem;
+  max-width: 80%;
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
 }
 /* --- Services Title --- */
+.services-title{
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
 .services-title h6{
   align-items: center;
   justify-content: center;
   text-align: center;
   margin: 1rem 0;
-  font-size: 2.5rem;
+  font-size: 4rem;
   color: green;
 }
 .services-title h7{
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 35px;
+    margin-bottom: 15px;
     color: blue;
     font-weight: 700;
     line-height: 55px;
 }
 .services-title p{
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
@@ -37,21 +41,20 @@
 /* ----- Range of Business Activities ----- */
 .business-container {
     margin: 0 auto;
-    width: 100vw;
-    max-width: 67.5rem;
+    max-width: 80%;
     display: flex;
     flex-direction: column;
     padding: 0 1rem;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
   }
   .icon{
     color: green;
   }
   .business-container h2 {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    font-size: 30px;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 40px;
     margin-bottom: 20px;
     color: blue;
     font-weight: 700;
@@ -61,8 +64,8 @@
   
   .business-container p {
     margin-top: 15px;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
     margin-bottom: 20px;
   }
   
@@ -93,7 +96,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 80%;
     margin: 65px auto;
     gap: 50px;
 }
@@ -115,24 +118,25 @@
 }
 .servicesImage{
     flex: 1;
-    width: 400px;
     margin: auto;
 }
 img{
     object-fit: cover;
-    height: 26rem;
-    width: 26rem;
+    height: 40rem;
+    width: 40rem;
     border-radius: 10px;
 }
 /* Why Choose Us Section */
 .why-choose-us-container {
-    padding: 40px 20px;
+    padding: 50px 70px;
     background-color: #f7f7f7;
     text-align: center;
+    max-width: 80%;
+    margin: auto;
   }
   
   .section-title {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     margin-bottom: 30px;
     color: blue;
     font-style: normal;
@@ -141,13 +145,13 @@ img{
   .reasons-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 60px;
   }
   
   .reason-card {
     background-color: #fff;
     border-radius: 8px;
-    padding: 20px;
+    padding: 40px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
   }
@@ -157,39 +161,40 @@ img{
   }
   
   .icon-container {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     color: blue;
     margin-bottom: 15px;
   }
   
   .reason-title {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     margin-bottom: 10px;
     color: #444;
   }
   
   .reason-description {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #666;
   }
 
   /* ---- Brand Names */
 .brands-container {
-    max-width: 1200px;
+    max-width: 80%;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
 }
 
 .brand-title {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     font-weight: bold;
     margin-bottom: 10px;
     font-style: normal;
 }
 
 .brand-description {
-    font-size: 1.2rem;
+    font-size: 2.5rem;
+    text-align: start;
     margin-bottom: 30px;
     color: #555;
 }
@@ -234,24 +239,27 @@ img{
 
 /* --------------------------css for small screen--------------------------------------- */
 
-@media screen and (max-width:360px) {
-  #services{
-    margin-top: -15px;
-  }
+@media screen and (max-width:600px) {
   /* --- Services Title --- */
+  #services{
+    gap: 10px;
+  } 
    .services-title h6{
-    font-size: 1.25rem;
-    margin-left: 6px;
+    font-size: 0.8rem;
+    margin: auto;
     }
     .services-title h7{
-      font-size: 25px;
-      margin-left: 10px;
+      font-size: 1rem;
+      margin: 0;
+      padding: 0;
+      gap: 0;
+      margin-top: -10px;
+      margin-bottom: -15px;
     }
     .services-title p{
       font-size: 1.1rem;
       line-height: 1.1rem;
-      margin-left: 10px;
-      margin-top: 0px;
+      margin: auto;
     }
     .business-container p {
       margin-top: -5px;
@@ -263,12 +271,14 @@ img{
     .business-container {
       font-size: 1rem;
       line-height: 1rem;
+      /* border: 2px solid black; */
+      margin: auto;
     }
     .business-container h2 {
-      font-size: 1rem;
-      line-height: 1rem;
-      font-size: 30px;
-      margin-bottom: 20px;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      margin: auto;
+
     }
     .business-container p {
       margin-top: 3px;
@@ -279,35 +289,101 @@ img{
     /* --- Detailed Services Info --- */
     .servicesInfo{
       gap: 0px;
-      margin: 20px auto;
-      /* border: 2px solid red; */
+      margin: auto;
+      /* border: 2px solid black; */
     }
     .servicesAbout{
-      width: 300px;
-      margin: 0px 15px;
-      /* border: 2px solid green; */
+      margin: 0;
     }
     .servicesAbout h5{
-      font-size: 13.5px;
+      font-size: 10px;
       margin-bottom: 10px;
     }
    .servicesAbout p{
-      font-size: 14px;
+      font-size: 8px;
       line-height: 1;
       margin-bottom: 40px;
       color: black;
    }
   .servicesImage{
       width: 100px;
-      /* border: 2px solid red; */
-      margin-left: 15px;
+      margin: auto;
+
   }
   img{
       object-fit: cover;
-      height: 15rem;
-      width: 14rem;
+      height: 10rem;
+      width: 9.5rem;
       border-radius: 10px;
   }
+  /* -----------Why Choose Us Section------------ */
+  .why-choose-us-container {
+     padding: 0px 0px;
+     /* border: 2px solid black; */
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 0px;
+  }
+  
+  .reasons-grid {
+    gap: 30px;
+    /* border: 2px solid red; */
+  }
+  
+  .reason-card {
+    padding: 5px 0px;
+    gap: 0;
+    max-width: 84%;
+    /* border: 2px solid red; */
+  }
+
+  .icon-container {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    /* border: 2px solid green; */
+  }
+  
+  .reason-title {
+    font-size: 1.1rem;
+    margin: auto;
+  }
+  
+  .reason-description {
+    font-size: 1rem;
+    color: #666;
+  }
+
+  /* ---- Brand Names */
+.brand-title {
+  font-size: 1.8rem;
+  text-align: start;
+  margin: auto;
+}
+
+.brand-description {
+  font-size: 1rem;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+.brand-logos {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 5px;
+}
+.brand-item {
+  margin: auto;
+}
+
+.brand-item img {
+  max-width: 100%;
+  height: auto;
+  max-height: 150px;
+}
+
 }
 
 

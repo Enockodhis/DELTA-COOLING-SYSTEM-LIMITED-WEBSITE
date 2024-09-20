@@ -84,7 +84,7 @@ h2{
   display: none;
 }
 .navMenu{
-    position: fixed;
+    position: absolute;
     /* padding-top: 50px; */
     top: 0rem;
     right: 0rem;

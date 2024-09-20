@@ -17,11 +17,11 @@
   justify-content: center;
   text-align: center;
   margin: 1rem 0;
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: green;
 }
 .services-title h7{
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 15px;
     color: blue;
     font-weight: 700;
@@ -273,11 +273,15 @@ img{
       line-height: 1rem;
       /* border: 2px solid black; */
       margin: auto;
+      gap: 0;
     }
     .business-container h2 {
       font-size: 1.5rem;
       line-height: 1.5rem;
       margin: auto;
+      margin-left: -10px;
+      text-align: start;
+      /* border: 2px solid red; */
 
     }
     .business-container p {
@@ -285,7 +289,18 @@ img{
       font-size: 1rem;
       line-height: 1rem;
       margin-bottom: 15px;
+      margin: auto;
+      /* border: 2px solid red; */
+      margin-left: -10px;
     }
+    .icon {
+       margin-left: -10px;
+    }
+    
+    h3 {
+       margin-left: -10px;
+    }
+
     /* --- Detailed Services Info --- */
     .servicesInfo{
       gap: 0px;

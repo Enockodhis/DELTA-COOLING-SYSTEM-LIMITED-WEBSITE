@@ -1,91 +1,81 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/deltalogo.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { TiThMenu } from "react-icons/ti";
 import { RiCloseFill } from "react-icons/ri";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [menu, setMenu] = useState("home");
-  const handleMenuClick = (menuName) => {
-    setMenu(menuName);
-    setShowMenu(false); // Closes the menu when an item is clicked
-  };
+
+  // Function to close the mobile menu
+  const closeMenu = () => setShowMenu(false);
+
+  // Define the navigation links
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Contact Us", path: "/contact-us" },
+  ];
 
   return (
-    <div className="navbar">
-      <img src={logo} alt="logo" className="logo" />
+    <nav className="navbar">
+      {/* Logo Section */}
+      <div className="navbar-logo">
+        <img src={logo} alt="Delta Cooling Systems Limited Logo" className="logo" />
+      </div>
+
+      {/* Organization Name Section */}
       <div className="organizationName">
         <h1>DELTA COOLING SYSTEMS LIMITED</h1>
         <div className="underline"></div>
         <h2>Your Ultimate and Trusted Cooling Solutions Provider</h2>
       </div>
-      <div className="navbar-menu">
-        <ul className="navbarMenuListItem">
-          <li
-            onClick={() => handleMenuClick("home")}
-            className={menu === "home" ? "active" : ""}
-          >
-            <Link to="/">Home</Link>
-          </li>
-          <li
-            onClick={() => handleMenuClick("about")}
-            className={menu === "about" ? "active" : ""}
-          >
-            <Link to="/about">About</Link>
-          </li>
-          <li
-            onClick={() => handleMenuClick("services")}
-            className={menu === "services" ? "active" : ""}
-          >
-            <Link to="/services">Services</Link>
-          </li>
-          <li
-            onClick={() => handleMenuClick("contact-us")}
-            className={menu === "contact-us" ? "active" : ""}
-          >
-            <Link to="/contact-us">Contact Us</Link>
-          </li>
-        </ul>
-      </div>
 
-      {/* ----Mobile Screen Navbar */}
-      {showMenu ? (
-        <RiCloseFill
-          className="mobileMenu-Icon"
-          onClick={() => setShowMenu(false)}
-        />
-      ) : (
-        <TiThMenu className="mobileMenu-Icon" onClick={() => setShowMenu(true)} />
-      )}
-        <ul className='navMenu' style={{display: showMenu? 'flex':'none'}}>
-        <li
-            onClick={() => handleMenuClick("home")}
-            className={menu === "home" ? "active" : ""}
-          >
-            <Link to="/">Home</Link>
+      {/* Desktop Navigation Menu */}
+      <ul className="navbarMenuListItem">
+        {navLinks.map((link) => (
+          <li key={link.name}>
+            <NavLink
+              exact={link.path === "/"}
+              to={link.path}
+              activeClassName="active"
+              onClick={closeMenu} // Ensures the mobile menu closes when a link is clicked
+            >
+              {link.name}
+            </NavLink>
           </li>
-          <li
-            onClick={() => handleMenuClick("about")}
-            className={menu === "about" ? "active" : ""}
-          >
-            <Link to="/about">About</Link>
-          </li>
-          <li
-            onClick={() => handleMenuClick("services")}
-            className={menu === "services" ? "active" : ""}
-          >
-            <Link to="/services">Services</Link>
-          </li>
-          <li
-            onClick={() => handleMenuClick("contact-us")}
-            className={menu === "contact-us" ? "active" : ""}
-          >
-            <Link to="/contact-us">Contact Us</Link>
-          </li>
+        ))}
+      </ul>
+
+      {/* Mobile Menu Icon */}
+      <button
+        className="mobileMenu-Icon"
+        onClick={() => setShowMenu((prev) => !prev)}
+        aria-label={showMenu ? "Close Menu" : "Open Menu"}
+      >
+        {showMenu ? <RiCloseFill /> : <TiThMenu />}
+      </button>
+
+      {/* Mobile Navigation Menu */}
+      {showMenu && (
+        <ul className="navMenu">
+          {navLinks.map((link) => (
+            <li key={link.name}>
+              <NavLink
+                exact={link.path === "/"}
+                to={link.path}
+                activeClassName="active"
+                onClick={closeMenu} // Closes the menu when a link is clicked
+              >
+                {link.name}
+              </NavLink>
+            </li>
+          ))}
         </ul>
-    </div>
+      )}
+    </nav>
   );
 };
 

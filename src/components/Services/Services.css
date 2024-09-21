@@ -113,13 +113,14 @@
     margin: 0px 25px;
 }
 .servicesAbout h5{
-    font-size: 26.5px;
+    font-size: 2rem;
+    line-height: 2rem;
     margin-bottom: 20px;
     color: blue;
 }
 .servicesAbout p{
-    font-size: 24px;
-    line-height: 1.5;
+    font-size: 2rem;
+    line-height: 2rem;
     margin-bottom: 40px;
     color: black;
 }

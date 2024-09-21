@@ -1,162 +1,125 @@
-.navbar{
-    /* height: 8rem; */
+.navbar {
     width: 100vw;
-    /* max-width: 95rem; */
     margin: 0 auto;
     padding: 1rem 5rem;
-    /* padding: 5rem 2rem; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: white; /* Ensures it's visible over content */ 
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.logo{
+
+.logo {
     object-fit: cover;
     height: 8rem;
     width: 11rem;
 }
-.organizationName{
+
+.organizationName {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid red; */
     gap: 0.5rem;
 }
-h1{
+
+h1 {
     color: #008000;
     font-weight: bold;
     margin: 0;
     text-align: center;
     font-size: 27px;
 }
-.underline{
-    /* border: 1px solid red; */
+
+.underline {
     width: 100%;
     height: 3px;
     background-color: red;
     margin: 2px auto;
 }
-h2{
+
+h2 {
     color: #008000;
     font-weight: bold;
     font-style: italic;
     text-align: center;
     font-size: 17px;
 }
-.navbarMenuListItem{
+
+.navbarMenuListItem {
     display: flex;
-    margin: auto;
+    gap: 20px;
+    list-style: none;
     cursor: pointer;
-    color: blue;
     font-size: 25px;
     font-weight: 700;
-    list-style: none;
-    gap: 20px;
+    color: blue;
 }
-.navbarMenuListItem li:hover{
+
+.navbarMenuListItem li:hover {
     color: green;
-    padding-bottom: 0.5rem;
     border-bottom: 3px solid green;
 }
-.active{
+
+.active {
     color: green;
-    padding-bottom: 0.5rem;
     border-bottom: 3px solid green;
 }
-.mobMenu-Icon{
-    height: 10vh;
-    width: 10vw;
+
+.mobileMenu-Icon {
+    height: 7vh;
+    width: 7vw;
+    cursor: pointer;
+    display: none;
 }
-.mobileMenu-Icon{
-  height: 7vh;
-  width: 7vw;
-  cursor: pointer;
-  display: none;
-}
-.closeMenu-Icon{
-  height: 7vh;
-  width: 7vw;
-  cursor: pointer;
-  display: none;
-}
-.navMenu{
+
+.navMenu {
     position: absolute;
-    /* padding-top: 50px; */
-    top: 0rem;
-    right: 0rem;
+    top: 0;
+    right: 0;
     height: 100vh;
     z-index: 2;
     display: flex;
     flex-direction: column;
     padding: 3rem;
     gap: 2rem;
-    display: block;
-    font-size: 25px;
-    font-weight: 700;
     min-width: 12rem;
     background-color: green;
     color: white;
     list-style: none;
     transition: transform 0.5s ease, right 0.5s ease;
-} 
-
-.listItem{
-    cursor: pointer;
-    color: blue;
-    padding: 0.5rem 3rem;
-    margin: 0.25rem;
-    background: rgb(230, 230, 230);
-}
-.listItem:hover {
-    color: green;
-    padding-bottom: 0.5rem;
-    border-bottom: 3px solid green;
-}
-.navbar-icon {
-    font-size: 20px;
-    margin-right: 8px;
-    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* --------------------------css for small screen--------------------------------------- */
-
-@media screen and (max-width:600px) {
-    .navbar{
-      padding: 5px;
+/* Mobile Responsive Design */
+@media screen and (max-width: 600px) {
+    .navbar {
+        padding: 5px;
     }
-    .logo{
-        object-fit: cover;
+
+    .logo {
         height: 6rem;
         width: 8rem;
     }
-    .organizationName{
-         display: none;
-    }
-    
-    .mobileMenu-Icon{
-     display: flex;
-     margin-right: 20px;
-     margin-top: 25px;
-     margin-left: 2px;
-   } 
-   .navbar-menu{
-    display: none;
-   } 
-   .navbar-icon {
-    font-size: 13px;
-    margin-right: 5px; 
-    transition: color 0.3s ease, transform 0.3s ease;
-   }
-  .active{
-    color: white;
-    padding-bottom: 0.5rem;
-    border-bottom: 3px solid white;
-    width: fit-content;
-  }
-}
 
- 
+    .organizationName {
+        display: none;
+    }
+
+    .mobileMenu-Icon {
+        display: flex;
+        margin-right: 20px;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .active {
+        color: white;
+        border-bottom: 3px solid white;
+        width: fit-content;
+    }
+}

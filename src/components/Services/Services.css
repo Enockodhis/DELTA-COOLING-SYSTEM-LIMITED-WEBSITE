@@ -195,14 +195,15 @@ img{
 }
 
 .brand-title {
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: bold;
     margin-bottom: 10px;
     font-style: normal;
 }
 
 .brand-description {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    line-height: 2rem;
     text-align: start;
     margin-bottom: 30px;
     color: #555;

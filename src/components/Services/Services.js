@@ -92,7 +92,7 @@ const Services = () => {
       {/* ---Detailed Services Info--- */}
       <div className="servicesInfo">
         <div className="servicesAbout">
-          <h5>INSTALLATION OF OUTDOOR UNITS</h5>
+          <h5>OUTDOOR UNITS</h5>
           <p>
             At Delta Cooling Systems Ltd we are dedicated to providing top-tier
             installation services for outdoor units, including air conditioning
@@ -113,7 +113,7 @@ const Services = () => {
           <img src={ductwork} alt="ductwork" />
         </div>
         <div className="servicesAbout">
-          <h5>AIR HANDLERS AND DUCTWORK</h5>
+          <h5>DUCTWORK</h5>
           <p>
             We are trusted expert in the installation of air handlers and
             ductwork systems, offering comprehensive HVAC solutions for

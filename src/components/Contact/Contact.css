@@ -8,6 +8,14 @@
     --background-color: #f7f7f7; /* Original background color */
     --white: #ffffff;
     --border-color: #cccccc;
+    
+    /* Font Sizes */
+    --font-size-small: 0.9rem;
+    --font-size-medium: 1rem;
+    --font-size-large: 1.2rem;
+    --font-size-xlarge: 1.5rem;
+    --font-size-heading: 2rem;
+    --font-size-subheading: 1.5rem;
   }
   
   /* General Styles for Contact Page */
@@ -38,8 +46,8 @@
   .contactInfo h2 {
     text-align: left;
     margin-bottom: 1.5rem;
-    font-size: 2rem;
-    color: var(--secondary-color);
+    font-size: var(--font-size-heading); /* Increased font size */
+    color: var(--secondary-color); /* Darker color for better readability */
     font-weight: 700;
     font-style: normal;
   }
@@ -47,7 +55,7 @@
   .contactDetails p {
     color: var(--primary-color); /* Maintain original color for subheadings */
     margin-top: 1rem;
-    font-size: 1.1rem;
+    font-size: var(--font-size-medium); /* Increased font size */
     font-weight: 600;
   }
   
@@ -63,7 +71,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
-    font-size: 1rem;
+    font-size: var(--font-size-medium); /* Increased font size */
     /* color: var(--subtext-color); */
   }
   
@@ -71,10 +79,11 @@
     color: var(--primary-color); /* Maintain original link color */
     text-decoration: none;
     transition: color 0.3s ease;
+    font-size: var(--font-size-medium); /* Increased font size */
   }
   
   .web-link:hover {
-    color: darken(var(--primary-color), 10%); /* Darker shade on hover */
+    color: #3742fa; /* Darker shade on hover */
     text-decoration: underline;
   }
   
@@ -89,13 +98,13 @@
   }
   
   .contact-Location h3 {
-    font-size: 1.5rem;
+    font-size: var(--font-size-subheading); /* Increased font size */
     color: var(--primary-color); /* Maintain original color */
     margin-bottom: 1rem;
   }
   
   .contact-Location p {
-    font-size: 1rem;
+    font-size: var(--font-size-medium); /* Increased font size */
     /* color: var(--subtext-color); */
     margin: 0.3rem 0;
   }
@@ -112,10 +121,11 @@
     font-weight: 600;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-size: var(--font-size-medium); /* Increased font size */
   }
   
   .direction-link:hover {
-    color: darken(var(--primary-color), 10%); /* Darker shade on hover */
+    color: #3742fa; /* Darker shade on hover */
   }
   
   .locationIconMain {
@@ -153,11 +163,11 @@
     color: var(--primary-color); /* Maintain original label color */
     margin-bottom: 0.5rem;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: var(--font-size-medium); /* Increased font size */
   }
   
   .form-control {
-    font-size: 1rem;
+    font-size: var(--font-size-medium); /* Increased font size */
     padding: 0.75rem 1rem;
     margin-bottom: 1.2rem;
     border: 1px solid var(--border-color);
@@ -174,7 +184,7 @@
   .submitBtn {
     background: var(--primary-color); /* Original blue background */
     padding: 0.75rem 2rem;
-    font-size: 1rem;
+    font-size: var(--font-size-medium); /* Increased font size */
     font-weight: 600;
     border-radius: 25px;
     border: none;
@@ -190,7 +200,7 @@
   }
   
   .submitBtn:active {
-    background-color: darken(var(--secondary-color), 10%); /* Darker green on active */
+    background-color: #2ecc71; /* Slightly darker green on active */
     transform: translateY(0);
   }
   
@@ -205,6 +215,24 @@
     .contactForm {
       width: 100%;
     }
+  
+    .contactInfo h2 {
+      font-size: 1.8rem; /* Slight adjustment for medium screens */
+    }
+  
+    .contact-Location h3 {
+      font-size: 1.4rem; /* Slight adjustment for medium screens */
+    }
+  
+    .direction-link {
+      font-size: 1rem; /* Slight adjustment for medium screens */
+    }
+  
+    .form-label,
+    .form-control,
+    .submitBtn {
+      font-size: var(--font-size-medium); /* Ensure consistency */
+    }
   }
   
   @media screen and (max-width: 600px) {
@@ -217,16 +245,17 @@
     }
   
     .contactInfo h2 {
-      font-size: 1.75rem;
+      font-size: 1.6rem; /* Increased for small screens */
+      text-align: center;
     }
   
     .contactDetails p,
     .contact-Location h3 {
-      font-size: 1.1rem;
+      font-size: 1.2rem; /* Increased for better readability */
     }
   
     .contact-Location p {
-      font-size: 0.95rem;
+      font-size: 1rem; /* Increased for better readability */
     }
   
     .mapLocation {
@@ -239,7 +268,7 @@
     }
   
     .direction-link {
-      font-size: 0.95rem;
+      font-size: 1rem;
     }
   
     .contactForm {
@@ -249,11 +278,14 @@
     .form-control {
       padding: 0.6rem 0.8rem;
       margin-bottom: 1rem;
+      font-size: 1rem; /* Increased for better readability */
     }
   
     .submitBtn {
       width: 100%;
       text-align: center;
+      font-size: 1rem; /* Increased for better readability */
+      padding: 0.75rem 1.5rem; /* Adjusted padding for smaller buttons */
     }
   }
   

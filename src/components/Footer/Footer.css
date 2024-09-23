@@ -67,22 +67,26 @@
 }
 .footer-menu a{
     padding-bottom: 0.2rem;
-    border-bottom: 2px solid white;
 }
 .homeFooter:hover {
-    color: blue;
+    border-bottom: 3.5px solid white; 
+    width: fit-content;
 }
 .aboutFooter:hover {
-    color: blue;
+    border-bottom: 3.5px solid white; 
+    width: fit-content;
 }
 .servicesFooter:hover {
-    color: blue;
+    border-bottom: 3.5px solid white; 
+    width: fit-content;
+
 }
 .contactFooter:hover {
-    color: blue; 
+    border-bottom: 3.5px solid white; 
+    width: fit-content; 
 }
 .navbar-icon {
-    margin-right: 3px;
+    margin-right: 8px;
 }
 
 /* --------------------------css for small screen--------------------------------------- */

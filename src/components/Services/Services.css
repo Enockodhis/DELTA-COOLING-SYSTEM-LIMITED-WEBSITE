@@ -231,6 +231,7 @@ img:hover {
 @media screen and (max-width:600px) {
   /* --- Services Title --- */
   .services-title h6 {
+    margin-top: -1rem;
     font-size: 1.1rem;
   }
   .services-title h7 {

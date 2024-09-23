@@ -1,6 +1,5 @@
 import React from "react";
 import "./Services.css";
-import { FaSnowflake, FaWind, FaFan, FaWater } from "react-icons/fa";
 import outdoorunit from "../../assets/outdoorunit.png";
 import ductwork from "../../assets/ductwork.webp";
 import splitoutdoorunit from "../../assets/splitoutdoor.png";
@@ -56,7 +55,7 @@ const Services = () => {
         </p>
 
         <div className="card">
-          <FaSnowflake className="icon" />
+          {/* <FaSnowflake className="icon" /> */}
           <div>
             <h3 className="cardTitle">Commercial Refrigeration</h3>
             <p>Cold Rooms, Defreezers, etc.</p>
@@ -64,7 +63,6 @@ const Services = () => {
         </div>
 
         <div className="card">
-          <FaWind className="icon" />
           <div>
             <h3 className="cardTitle">Air Conditioning</h3>
             <p>
@@ -76,7 +74,6 @@ const Services = () => {
         </div>
 
         <div className="card">
-          <FaFan className="icon" />
           <div>
             <h3 className="cardTitle">Mechanical Ventilation Systems</h3>
             <p>
@@ -87,7 +84,6 @@ const Services = () => {
         </div>
 
         <div className="card">
-          <FaWater className="icon" />
           <div>
             <h3 className="cardTitle">Plumbing Services</h3>
           </div>

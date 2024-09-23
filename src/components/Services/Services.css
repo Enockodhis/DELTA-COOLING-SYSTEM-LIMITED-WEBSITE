@@ -176,14 +176,12 @@ img{
   }
   
   .reason-title {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     margin-bottom: 10px;
-    color: #444;
   }
   
   .reason-description {
     font-size: 1.2rem;
-    color: #666;
   }
 
   /* ---- Brand Names */
@@ -206,7 +204,6 @@ img{
     line-height: 2rem;
     text-align: start;
     margin-bottom: 30px;
-    color: #555;
 }
 
 .brand-logos {

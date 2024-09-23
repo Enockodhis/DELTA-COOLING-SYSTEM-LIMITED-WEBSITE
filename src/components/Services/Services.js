@@ -247,22 +247,22 @@ const Services = () => {
         </p>
         <div className="brand-logos">
           <div className="brand-item">
-            <img src={Bosch} alt="Bosch" />
-          </div>
-          <div className="brand-item">
-            <img src={Samsung} alt="Samsung" />
-          </div>
-          <div className="brand-item">
-            <img src={Bitzer} alt="Bitzer" />
-          </div>
-          <div className="brand-item">
             <img src={Daikin} alt="Daikin" />
           </div>
           <div className="brand-item">
             <img src={Airdale} alt="Airdale" />
           </div>
           <div className="brand-item">
+            <img src={Bitzer} alt="Bitzer" />
+          </div>
+          <div className="brand-item">
             <img src={Toshiba} alt="Toshiba" />
+          </div>
+          <div className="brand-item">
+            <img src={Samsung} alt="Samsung" />
+          </div>
+          <div className="brand-item">
+            <img src={Bosch} alt="Bosch" />
           </div>
           <div className="brand-item">
             <img src={Airmaster} alt="Airmaster" />

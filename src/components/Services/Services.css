@@ -185,65 +185,56 @@ img{
   }
 
   /* ---- Brand Names */
-.brands-container {
+  .brands-container {
     max-width: 80%;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-}
-
-.brand-title {
-    font-size: 4rem;
+  }
+  
+  .brand-title {
+    font-size: 3.5rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-style: normal;
-}
-
-.brand-description {
-    font-size: 2rem;
+  }
+  
+  .brand-description {
+    font-size: 1.5rem;
     line-height: 2rem;
-    text-align: start;
-    margin-bottom: 30px;
-}
-
-.brand-logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.brand-item {
-    width: 16.5%;
-    margin: 10px 0;
-    transition: transform 0.3s;
-}
-
-.brand-item img {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+  
+  .brand-logos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 items per row */
+    grid-template-rows: auto auto; /* Two rows */
+    gap: 20px; /* Space between items */
+    justify-items: center; /* Center the items within the grid */
+  }
+  
+  .brand-item {
+    width: 100%;
+    padding: 10px;
+    background-color: #f9f9f9; /* Card-like appearance */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for card effect */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .brand-item img {
     width: 100%;
     height: auto;
-    max-height: 150px;
+    max-height: 120px;
     object-fit: contain;
-    /* filter: grayscale(100%); */
-    transition: filter 0.3s ease;
-}
-
-.brand-item:hover img {
-    /* filter: grayscale(0%); */
+  }
+  
+  .brand-item:hover {
     transform: scale(1.1);
-}
-
-@media (max-width: 768px) {
-    .brand-item {
-        width: 45%;
-    }
-}
-
-@media (max-width: 480px) {
-    .brand-item {
-        width: 90%;
-    }
-}
-
+  }
+  
 /* --------------------------css for small screen--------------------------------------- */
 
 @media screen and (max-width:600px) {
@@ -377,34 +368,39 @@ img{
   }
 
   /* ---- Brand Names */
-.brand-title {
-  font-size: 1.8rem;
-  text-align: start;
-  margin: auto;
-}
+  .brands-container {
+    padding: 10px;
+  }
 
-.brand-description {
-  font-size: 1rem;
-  margin: auto;
-  padding-bottom: 5px;
-}
+  .brand-title {
+    font-size: 2rem;
+  }
 
-.brand-logos {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  gap: 5px;
-}
-.brand-item {
-  margin: auto;
-}
+  .brand-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
 
-.brand-item img {
-  max-width: 100%;
-  height: auto;
-  max-height: 150px;
-}
+  .brand-logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
+    gap: 10px;
+  }
 
+  .brand-item {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .brand-item img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100px;
+  }
 }
 
 

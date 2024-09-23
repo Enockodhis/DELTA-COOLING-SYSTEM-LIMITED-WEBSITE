@@ -19,6 +19,10 @@ import Bitzer from "../../assets/bitzer.png";
 import Daikin from "../../assets/daikin.png";
 import Airdale from "../../assets/airdale.png";
 import Toshiba from "../../assets/toshiba.png";
+import Samsung from "../../assets/samsung.png";
+import Systemair from "../../assets/systemair.png";
+import LG from "../../assets/lifegood.png";
+import Airmaster from "../../assets/airmaster.png";
 
 const Services = () => {
   return (
@@ -246,7 +250,7 @@ const Services = () => {
             <img src={Bosch} alt="Bosch" />
           </div>
           <div className="brand-item">
-            <img src={SolarPalau} alt="SolarPalau" />
+            <img src={Samsung} alt="Samsung" />
           </div>
           <div className="brand-item">
             <img src={Bitzer} alt="Bitzer" />
@@ -259,6 +263,18 @@ const Services = () => {
           </div>
           <div className="brand-item">
             <img src={Toshiba} alt="Toshiba" />
+          </div>
+          <div className="brand-item">
+            <img src={Airmaster} alt="Airmaster" />
+          </div>
+          <div className="brand-item">
+            <img src={Systemair} alt="Systemair" />
+          </div>
+          <div className="brand-item">
+            <img src={LG} alt="LG" />
+          </div>
+          <div className="brand-item">
+            <img src={SolarPalau} alt="SolarPalau" />
           </div>
         </div>
       </div>

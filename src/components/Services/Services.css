@@ -8,96 +8,75 @@
   padding: 2 1rem;
 }
 /* --- Services Title --- */
-.services-title{
-  max-width: 80%;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
+.services-title {
+  max-width: 95%;
+  margin: 0 auto;
   text-align: center;
-  margin-top: 3.5rem;
+  margin-top: 4rem;
   margin-bottom: 3rem;
 }
-.services-title h6{
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  margin: 1rem 0;
-  font-size: 3rem;
+.services-title h6 {
+  font-size: 2.8rem;
   color: green;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
 }
-.services-title h7{
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: blue;
-    font-weight: 700;
-    line-height: 55px;
+.services-title h7 {
+  font-size: 2.2rem;
+  color: blue;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
-.services-title p{
-    font-size: 2rem;
-    line-height: 2rem;
-    margin: 0 auto;
-    display: block;
-    margin-block-start: 1rem;
-    margin-block-end: 1rem;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
+.services-title p {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin: 0 auto;
+  max-width: 80%;
+  text-align: start;
 }
 
-/* ----- Range of Business Activities ----- */
+/* --- Range of Business Activities --- */
 .business-container {
-    margin: 0 auto;
-    max-width: 80%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 1rem;
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-  }
-  .icon{
-    color: green;
-  }
-  .business-container h2 {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    margin-bottom: 0.5rem;
-    color: blue;
-    font-weight: 700;
-    line-height: 55px;
-    font-style: normal;
-  }
-  
-  .business-container p {
-    font-size: 2rem;
-    line-height: 2rem;
-    margin-top: 15px;
-    margin-bottom: 20px;
-  }
-  
-  .business-card {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    background-color: #f9f9f9;
-  }
-  
-  .business-card .icon {
-    font-size: 24px;
-    margin-right: 15px;
-    color: #007BFF;
-  }
-  
-  .business-card h3 {
-    font-size: 2rem;
-    line-height: 2rem;
-    margin-bottom: 5px;
-  }
-  
+  max-width: 75%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.business-container h2 {
+  font-size: 2.5rem;
+  color: blue;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-style: normal;
+}
+.business-container p {
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card .icon {
+  font-size: 2.5rem;
+  color: green;
+  margin-right: 1.5rem;
+}
+.card h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.card p {
+  font-size: 1.8rem;
+}
   
 /* --- Detailed Services Info --- */
 .servicesInfo {
@@ -127,8 +106,8 @@
 }
 
 .servicesAbout p {
-  font-size: 2.3rem;
-  line-height: 2.3rem;
+  font-size: 2rem;
+  line-height: 2rem;
   margin-bottom: 25px;
 }
 
@@ -252,65 +231,39 @@ img:hover {
 
 @media screen and (max-width:600px) {
   /* --- Services Title --- */
-  #services{
-    gap: 5px;
-  } 
-  .services-title{
-    margin-top: 2rem;
+  .services-title h6 {
+    font-size: 1.1rem;
   }
-   .services-title h6{
-    font-size: 0.8rem;
-    margin: auto;
-    }
-    .services-title h7{
-      font-size: 1rem;
-      margin: 0;
-      padding: 0;
-      gap: 0;
-      margin-top: -10px;
-      margin-bottom: -15px;
-    }
-    .services-title p{
-      /* border: 2px solid black; */
-      font-size: 1.1rem;
-      line-height: 1.1rem;
-      margin: auto;
-    }
-    .business-container p {
-      margin-top: -5px;
-      font-size: 1.2rem;
-      line-height: 1.2rem;
-      margin-bottom: 20px;
-    }
-    /* ----- Range of Business Activities ----- */
-    .business-container {
-      font-size: 1rem;
-      line-height: 1rem;
-      /* border: 2px solid black; */
-      margin: auto;
-      gap: 0;
-    }
-    .business-container h2 {
-      font-size: 1.2rem;
-      line-height: 1.2rem;
-      margin-bottom: 10px;
-    }
-    .business-container p {
-      font-size: 1rem;
-      line-height: 1rem;
-      margin-bottom: 10px;
-      /* border: 2px solid red; */
-      margin-left: -10px;
-    }
-    .icon {
-       margin-left: -10px;
-    }
-    
-    .card h3 {
-       margin-left: -10px;
-       margin-bottom: 10px;
-    }
-     
+  .services-title h7 {
+    font-size: 1.2rem;
+  }
+  .services-title p {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+/* --- Range of Business Activities --- */
+  .business-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: -5rem;
+  }
+  .business-container p {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+  .card .icon {
+    font-size: 2rem;
+  }
+  .card h3 {
+    font-size: 1.1rem;
+  }
+  .card p {
+    font-size: 1rem;
+  }
     /* --- Detailed Services Info --- */
     .servicesInfo {
       display: flex;

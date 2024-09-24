@@ -1,25 +1,25 @@
 #Home {
-    height: calc(100vh - 8rem);
-    width: 100vw;
-    max-height: calc(100vh - 8rem);
-    margin: 0 auto;
-    position: relative;
-    /* margin: 30px auto; */
-    overflow: hidden;
-  }
-  
-  .background-video {
-    position: fixed;
-    top: - 8rem;
-    /* top: 0; */
-    right: 0;
-    /* left: 0; */
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
-  
-  /* .home-contents {
+  height: calc(100vh - 8rem);
+  width: 100vw;
+  max-height: calc(100vh - 8rem);
+  margin: 0 auto;
+  position: relative;
+  /* margin: 30px auto; */
+  overflow: hidden;
+}
+
+.background-video {
+  position: fixed;
+  top: -8rem;
+  /* top: 0; */
+  right: 0;
+  /* left: 0; */
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* .home-contents {
     position: relative;
     z-index: 1;
     color: white;
@@ -37,59 +37,59 @@
     background-color: rgba(0, 0, 0, 0.5);
   } */
 
-  .home-contents {
-    position: absolute; /* Changed from relative to absolute for better positioning */
-    z-index: 1;
-    color: white;
-    padding: 2vw 20px; /* Reduced padding-top and padding-bottom */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5vw;
-    max-width: 40%;
-    top: 50%; /* Center vertically */
-    left: 6vw;
-    transform: translateY(-50%); /* Adjust to perfectly center */
-    animation: fadeIn 3s;
-    font-weight: bolder;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  }
-  
-  .home-contents h3{
-    font-weight: 500;
-    /* color: white; */
-    color: #f0f0f0; /* Light gray to increase contrast */
-    font-size: max(4.5vw, 22px);
-    margin-bottom: 20px;
-  }
-  .home-contents p{
-    /* color: white; */
-    color: #dcdcdc; /* Slightly lighter gray */
-    font-size: 20px;
-  }
-  
-  .home-contents button {
-    padding: 10px 20px;
-    font-size: max(1vw, 16px);
-    font-weight: 500;
-    padding: 1vw 2.3vw;
-    border-radius: 50px;
-    background-color: blue;
-    color: white;
-    border: none;
-    cursor: pointer;
-    z-index: 2; /* Ensure button is above everything */
-    margin-top: 30px;
-  }
-  
-  button:hover {
-    background-color: green;
-  }
+.home-contents {
+  position: absolute; /* Changed from relative to absolute for better positioning */
+  z-index: 1;
+  color: white;
+  padding: 2vw 20px; /* Reduced padding-top and padding-bottom */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5vw;
+  max-width: 40%;
+  top: 50%; /* Center vertically */
+  left: 6vw;
+  transform: translateY(-50%); /* Adjust to perfectly center */
+  animation: fadeIn 3s;
+  font-weight: bolder;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
 
- /* --------------------------css for small screen--------------------------------------- */
+.home-contents h3 {
+  font-weight: 500;
+  /* color: white; */
+  color: #f0f0f0; /* Light gray to increase contrast */
+  font-size: max(4.5vw, 22px);
+  margin-bottom: 20px;
+}
+.home-contents p {
+  /* color: white; */
+  color: #dcdcdc; /* Slightly lighter gray */
+  font-size: 20px;
+}
 
-@media screen and (max-width:600px) {
+.home-contents button {
+  padding: 10px 20px;
+  font-size: max(1vw, 16px);
+  font-weight: 500;
+  padding: 1vw 2.3vw;
+  border-radius: 50px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 2; /* Ensure button is above everything */
+  margin-top: 30px;
+}
+
+button:hover {
+  background-color: green;
+}
+
+/* --------------------------css for small screen--------------------------------------- */
+
+@media screen and (max-width: 600px) {
   #Home {
     height: 58vh;
   }
@@ -111,10 +111,10 @@
     transform: translate(-50%, -50%);
     padding: 4vw 10px; /* Adjusted padding for better spacing */
   }
-  .home-contents h3{
+  .home-contents h3 {
     font-size: max(3.8vw, 21px);
   }
-  .home-contents p{
+  .home-contents p {
     font-size: 15px;
   }
   .home-contents button {
@@ -122,5 +122,4 @@
     padding: 1.7vw;
     width: 35vw;
   }
-
 }

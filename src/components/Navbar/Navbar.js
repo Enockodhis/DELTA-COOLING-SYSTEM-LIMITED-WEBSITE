@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import logo from "../../assets/deltalogo.png";
 import { Link } from "react-router-dom";
-import { TiThMenu } from "react-icons/ti";
-import { RiCloseFill } from "react-icons/ri";
+import { IoMenu } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -53,11 +53,6 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Screen Navbar */}
-      {showMenu ? (
-        <RiCloseFill className="mobileMenu-Icon" aria-label="Close Menu" onClick={() => setShowMenu(false)} />
-      ) : (
-        <TiThMenu className="mobileMenu-Icon" aria-label="Open Menu" onClick={() => setShowMenu(true)} />
-      )}
       <ul className="navMenu" style={{ display: showMenu ? "flex" : "none" }}>
         <li onClick={() => handleMenuClick("home")} className={menu === "home" ? "active" : ""}>
           <Link to="/">Home</Link>
@@ -71,7 +66,9 @@ const Navbar = () => {
         <li onClick={() => handleMenuClick("contact-us")} className={menu === "contact-us" ? "active" : ""}>
           <Link to="/contact-us">Contact Us</Link>
         </li>
+        <IoClose className="closeMenu-Icon" aria-label="Close Menu" onClick={() => setShowMenu(false)} />
       </ul>
+      <IoMenu className="mobileMenu-Icon" aria-label="Open Menu" onClick={() => setShowMenu(true)} />
     </div>
   );
 };

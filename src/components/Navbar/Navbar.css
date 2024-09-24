@@ -70,30 +70,18 @@ h2 {
 }
 
 .mobileMenu-Icon {
-    height: 7vh;
-    width: 7vw;
-    cursor: pointer;
     display: none;
 }
-
-.navMenu {
-    position: absolute;
-    font-size: 20px;
-    font-weight: bold;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    padding: 3rem;
-    gap: 2rem;
-    min-width: 12rem;
-    background-color: green;
-    color: white;
-    list-style: none;
-    transition: transform 0.5s ease, right 0.5s ease;
+.closeMenu-Icon{
+    display: none;
 }
+.navMenu{
+    display: none;
+}
+.navMenu li{
+    display: none;
+}
+ 
 
 /* Mobile Responsive Design */
 @media screen and (max-width: 600px) {
@@ -106,22 +94,56 @@ h2 {
         width: 8rem;
     }
 
-    .organizationName {
+    .organizationName{
+        display: none;
+    }
+
+    .navbarMenuListItem{
         display: none;
     }
 
     .mobileMenu-Icon {
+        display: block;
+        font-size: 25px;
+        width: 7vw;
+        height: 7vh;
+    }
+    .closeMenu-Icon{
+        display: block;
+        font-size: 25px;
+        width: 7vw;
+        height: 7vh;
+        color: white;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .navMenu{
+        background: green;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        color: white;
         display: flex;
-        margin-right: 20px;
+        flex-direction: column;
+        margin: auto;
     }
-
-    .navbar-menu {
-        display: none;
+    .navMenu li{
+        display: block;
+        margin: 15px;
+        font-size: 20px;
+        padding-top: 25px;
     }
-
     .active {
         color: white;
         border-bottom: 3px solid white;
         width: fit-content;
     }
+
+     
+    
 }

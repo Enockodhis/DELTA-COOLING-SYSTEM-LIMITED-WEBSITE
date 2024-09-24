@@ -105,21 +105,23 @@ h2 {
     .mobileMenu-Icon {
         display: block;
         font-size: 30px;
-        width: 7vw;
-        height: 7vh;
+        width: 4rem;
+        height: 4rem;
         font-weight: bold;
+        margin-right: 10px;
     }
     .closeMenu-Icon{
         display: block;
         font-size: 30px;
         font-weight: bold;
-        width: 7vw;
-        height: 7vh;
+        width: 4rem;
+        height: 4rem;
         color: white;
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
+        margin-left: -20px;
     }
     .navMenu{
         background: green;

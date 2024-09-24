@@ -104,13 +104,15 @@ h2 {
 
     .mobileMenu-Icon {
         display: block;
-        font-size: 25px;
+        font-size: 30px;
         width: 7vw;
         height: 7vh;
+        font-weight: bold;
     }
     .closeMenu-Icon{
         display: block;
-        font-size: 25px;
+        font-size: 30px;
+        font-weight: bold;
         width: 7vw;
         height: 7vh;
         color: white;
@@ -134,8 +136,9 @@ h2 {
     }
     .navMenu li{
         display: block;
-        margin: 15px;
+        margin: 10px;
         font-size: 20px;
+        font-weight: 700;
         padding-top: 25px;
     }
     .active {

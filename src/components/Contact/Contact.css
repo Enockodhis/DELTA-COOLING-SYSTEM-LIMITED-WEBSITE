@@ -284,7 +284,10 @@
     .locationIcon2 {
       font-size: 1.5rem;
     }
-
+    
+    .mapLocation{
+      width: 100%;
+    }
     .mapLocation p {
       font-size: 1.2rem;
     }

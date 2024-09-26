@@ -155,6 +155,7 @@
 
   .mapLocation p {
     font-size: 2rem;
+    color: var(--secondary-color); 
   }
   
   /* Contact Form Section */

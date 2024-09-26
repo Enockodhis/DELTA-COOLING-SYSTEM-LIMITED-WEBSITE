@@ -145,7 +145,7 @@ const Contact = () => {
               <MdLocationOn className="locationIcon1" />
               <MdArrowDownward className="locationIcon2" />
             </div>
-            <p>Click here to get directions to our location</p>
+            <p>Click For Directions</p>
           </a>
           {/* Embed Google Map iframe to show the route */}
           <iframe

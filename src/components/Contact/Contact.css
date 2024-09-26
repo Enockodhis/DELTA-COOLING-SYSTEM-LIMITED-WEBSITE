@@ -10,12 +10,12 @@
     --border-color: #cccccc;
     
     /* Font Sizes */
-    --font-size-small: 0.9rem;
-    --font-size-medium: 1rem;
-    --font-size-large: 1.2rem;
-    --font-size-xlarge: 1.5rem;
-    --font-size-heading: 2rem;
-    --font-size-subheading: 1.5rem;
+    --font-size-small: 1rem;
+    --font-size-medium: 1.2rem;
+    --font-size-large: 1.5rem;
+    --font-size-xlarge: 2rem;
+    --font-size-heading: 2.5rem;
+    --font-size-subheading: 2rem;
   }
   
   /* General Styles for Contact Page */
@@ -23,8 +23,8 @@
     width: 100%;
     max-width: 1200px; /* Increased max-width for better layout on larger screens */
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: column; */
     align-items: flex-start;
     justify-content: space-between;
     padding: 2rem;
@@ -32,7 +32,10 @@
     box-sizing: border-box;
     gap: 2rem; /* Space between contact info and form */
   }
-  
+  .contactUs{
+    display: flex;
+    flex-direction: row;
+  }
   /* Contact Information Section */
   .contactInfo {
     background: var(--white); /* White background for contrast */
@@ -112,6 +115,12 @@
   /* Map Location Link */
   .mapLocation {
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
   }
   
   .direction-link {
@@ -127,7 +136,7 @@
   .direction-link:hover {
     color: #3742fa; /* Darker shade on hover */
   }
-  
+
   .locationIconMain {
     display: flex;
     align-items: center;
@@ -135,13 +144,17 @@
   }
   
   .locationIcon1 {
-    font-size: 2rem;
+    font-size: 5rem;
     color: var(--accent-color); /* Original red color */
   }
   
   .locationIcon2 {
-    font-size: 2rem;
+    font-size: 5rem;
     color: var(--primary-color); /* Original blue color */
+  }
+
+  .mapLocation p {
+    font-size: 2rem;
   }
   
   /* Contact Form Section */
@@ -210,7 +223,10 @@
       flex-direction: column;
       align-items: center;
     }
-  
+    .contactUs{
+      display: flex;
+      flex-direction: column;
+    }
     .contactInfo,
     .contactForm {
       width: 100%;
@@ -265,6 +281,10 @@
     .locationIcon1,
     .locationIcon2 {
       font-size: 1.5rem;
+    }
+
+    .mapLocation p {
+      font-size: 1.2rem;
     }
   
     .direction-link {

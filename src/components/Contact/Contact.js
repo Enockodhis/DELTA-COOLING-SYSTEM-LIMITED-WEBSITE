@@ -153,7 +153,10 @@ const Contact = () => {
             src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d127417.46082916158!2d36.82013336973883!3d-1.3199567594369736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!3e0!4m3!3m2!1d-1.3204717!2d36.9073374!4m8!1m0!1m5!1m1!1s0x182f11a9c4b7c3cd:0xda99cee89922afc1!2m2!1d36.9025411!2d-1.3199673!3e0!5m1!1e1"
             width="95%"
             height="400px"
-            style={{ border: 0 }}
+            style={{ border: 0, 
+                     borderRadius: '15px',
+                     overflow: 'hidden' 
+             }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

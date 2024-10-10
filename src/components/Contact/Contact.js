@@ -136,7 +136,7 @@ const Contact = () => {
     </div>
       <div className="mapLocation">
           <a
-            href="https://www.google.com/maps/dir/-1.3204717,36.9073374/Airport+N+Rd,+Nairobi/@-1.3199568,36.8201334,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x182f11a9c4b7c3cd:0xda99cee89922afc1!2m2!1d36.9025411!2d-1.3199673!5m1!1e1?entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D"
+            href="https://www.google.com/maps/place/Delta+Cooling+Systems/@-1.3199582,36.9025354,17z/data=!3m1!4b1!4m6!3m5!1s0x182f11a9c4b7c3cd:0xda99cee89922afc1!8m2!3d-1.3199582!4d36.9025354!16s%2Fg%2F11j7dcqc5q!5m1!1e1?entry=ttu&g_ep=EgoyMDI0MTAwNy4xIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className="direction-link"
@@ -149,8 +149,8 @@ const Contact = () => {
           </a>
           {/* Embed Google Map iframe to show the route */}
           <iframe
-            title="Google Map Route to Airport N Rd, Nairobi"
-            src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d127417.46082916158!2d36.82013336973883!3d-1.3199567594369736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!3e0!4m3!3m2!1d-1.3204717!2d36.9073374!4m8!1m0!1m5!1m1!1s0x182f11a9c4b7c3cd:0xda99cee89922afc1!2m2!1d36.9025411!2d-1.3199673!3e0!5m1!1e1"
+            title="Google Map of Delta Cooling Systems"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.01869914294!2d36.9025354!3d-1.3199582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11a9c4b7c3cd%3A0xda99cee89922afc1!2sDelta%20Cooling%20Systems!5e0!3m2!1sen!2ske!4v1696957163419!5m2!1sen!2ske"
             width="95%"
             height="400px"
             style={{ border: 0, 

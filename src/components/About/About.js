@@ -1,9 +1,9 @@
 import React from "react";
 import "./About.css";
 import { Link } from "react-router-dom";
-import industrialFurnace from "../../assets/industrialFurnace.webp";
-import residentialFurnace from "../../assets/residentialFurnace.webp";
-import commercialHVACunit from "../../assets/commercialHVACunit.webp";
+import industrialFurnace from "../../assets/industrialFurnace.jpg";
+import residentialFurnace from "../../assets/residentialFurnace.jpeg";
+import commercialHVACunit from "../../assets/commercialHVACunit.jpg";
 
 const About = () => {
   return (

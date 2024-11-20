@@ -1,10 +1,10 @@
 import React from "react";
 import "./Services.css";
-import outdoorunit from "../../assets/outdoorunit.png";
-import ductwork from "../../assets/ductwork.webp";
+import outdoorunit from "../../assets/outdoorunit.jpeg";
+import ductwork from "../../assets/ductwork.jpg";
 import splitoutdoorunit from "../../assets/splitoutdoor.png";
-import residentialAc from "../../assets/residentialAc.webp";
-import hvacdiffuser from "../../assets/hvacdiffuser.webp";
+import residentialAc from "../../assets/residentialAc.jpg";
+import hvacdiffuser from "../../assets/hvacdiffuser.jpeg";
 import {
   FaTools,
   FaCogs,

@@ -229,7 +229,13 @@ img:hover {
 /* --------------------------css for small screen--------------------------------------- */
 
 @media screen and (max-width:600px) {
+  #services{
+    box-shadow: none;
+  }
   /* --- Services Title --- */
+  .services-title {
+    max-width: 100%;
+  }
   .services-title h6 {
     margin-top: -1rem;
     font-size: 1.1rem;
@@ -240,8 +246,12 @@ img:hover {
   .services-title p {
     font-size: 1rem;
     line-height: 1rem;
+    max-width: 100%;
   }
 /* --- Range of Business Activities --- */
+.business-container {
+  max-width: 100%;
+}
   .business-container h2 {
     font-size: 1.5rem;
     margin-bottom: -5rem;
@@ -254,6 +264,7 @@ img:hover {
 
   .card {
     padding: 1rem;
+    max-width: 100%;
   }
   .card {
     font-size: 2rem;
@@ -267,6 +278,7 @@ img:hover {
     /* --- Detailed Services Info --- */
     .servicesInfo {
       display: flex;
+      max-width: 100%;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
@@ -310,6 +322,7 @@ img:hover {
   /* -----------Why Choose Us Section------------ */
   .why-choose-us-container {
      padding: 0px 10px;
+     max-width: 100%;
      /* border: 2px solid black; */
   }
   
@@ -349,6 +362,7 @@ img:hover {
   /* ---- Brand Names */
   .brands-container {
     padding: 10px;
+    max-width: 100%;
   }
 
   .brand-title {

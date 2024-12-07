@@ -265,6 +265,7 @@ img:hover {
   .card {
     padding: 1rem;
     max-width: 100%;
+    align-items: center;
   }
   .card {
     font-size: 2rem;
@@ -295,7 +296,7 @@ img:hover {
     }
     
     .servicesAbout h5 {
-      font-size: 8px;
+      font-size: 10px;
       margin-bottom: 2px;
     }
     

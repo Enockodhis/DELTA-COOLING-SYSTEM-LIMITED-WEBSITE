@@ -339,12 +339,16 @@ img:hover {
   
   .reasons-grid {
     gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /* border: 2px solid red; */
   }
   
   .reason-card {
     padding: 5px 0px;
-    gap: 10;
+    gap: 0;
     max-width: 84%;
     /* border: 2px solid red; */
   }

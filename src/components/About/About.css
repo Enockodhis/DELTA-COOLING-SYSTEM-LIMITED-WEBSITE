@@ -1,0 +1,122 @@
+#About{
+  overflow: hidden;
+  max-width: 80%;
+  margin: 0 auto;
+
+}
+.aboutHeader h4{
+  color: green;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 35px;
+}
+.contentInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 65px auto;
+    gap: 50px;
+}
+.contentAbout{
+    flex: 1;
+    /* border: 2px solid red; */
+}
+.contentAbout h5{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: blue;
+}
+.contentAbout p{
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: black;
+}
+.contentAbout button{
+    padding: 10px 20px;
+    font-size: max(1vw, 16px);
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    border-radius: 50px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 2; /* Ensure button is above everything */
+    margin-top: 30px;
+}
+button:hover {
+    background-color: green;
+  }
+.contentImage{
+    flex: 1;
+    /* border: 2px solid black; */
+    width: 100%;
+    height: auto;
+}
+.contentImage img{
+    object-fit: cover;
+    width: 42rem;
+    height: 42rem;
+    border-radius: 10px;
+}
+
+/* --------------------------css for small screen--------------------------------------- */
+
+@media screen and (max-width:600px) {
+    #About {
+        margin-top: -20px;
+        max-width: 95%; /* Ensure content fits better */
+    }
+
+    .aboutHeader h4 {
+        font-size: 20px;
+    }
+
+    .contentInfo {
+        display: flex;
+        flex-direction: row; /* Keep content and image side by side */
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        margin: 25px auto;
+        padding: 0 10px;
+    }
+
+    .contentAbout {
+        flex: 1;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .contentImage {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contentImage img {
+        object-fit: cover;
+        height: 12rem; /* Scale the image height for small screens */
+        width: 12rem;  /* Adjust width to keep proportions */
+        border-radius: 10px;
+    }
+
+    .contentAbout h5 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .contentAbout p {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+
+    .contentAbout button {
+        font-size: 12px;
+        padding: 8px 15px;
+        margin-top: 10px;
+        width: 80%;
+    }
+}  

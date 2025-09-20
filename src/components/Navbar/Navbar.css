@@ -1,0 +1,152 @@
+.navbar {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 1rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    object-fit: cover;
+    height: 8rem;
+    width: 11rem;
+}
+
+.organizationName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+h1 {
+    color: #008000;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    font-size: 27px;
+}
+
+.underline {
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    margin: 2px auto;
+}
+
+h2 {
+    color: #008000;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    font-size: 17px;
+}
+
+.navbarMenuListItem {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 700;
+    color: blue;
+}
+
+.navbarMenuListItem li:hover {
+    color: green;
+    border-bottom: 3px solid green;
+}
+
+.active {
+    color: green;
+    border-bottom: 3px solid green;
+}
+
+.mobileMenu-Icon {
+    display: none;
+}
+.closeMenu-Icon{
+    display: none;
+}
+.navMenu{
+    display: none;
+}
+.navMenu li{
+    display: none;
+}
+ 
+
+/* Mobile Responsive Design */
+@media screen and (max-width: 600px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .logo {
+        height: 6rem;
+        width: 8rem;
+    }
+
+    .organizationName{
+        display: none;
+    }
+
+    .navbarMenuListItem{
+        display: none;
+    }
+
+    .mobileMenu-Icon {
+        display: block;
+        font-size: 30px;
+        width: 4rem;
+        height: 4rem;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    .closeMenu-Icon{
+        display: block;
+        font-size: 30px;
+        font-weight: bold;
+        width: 4rem;
+        height: 4rem;
+        color: white;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+        margin-left: -20px;
+    }
+    .navMenu{
+        background: green;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .navMenu li{
+        display: block;
+        margin: 10px;
+        font-size: 20px;
+        font-weight: 700;
+        padding-top: 25px;
+    }
+    .active {
+        color: white;
+        border-bottom: 3px solid white;
+        width: fit-content;
+    }
+    
+}

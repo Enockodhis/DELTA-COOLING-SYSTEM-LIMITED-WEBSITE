@@ -1,0 +1,153 @@
+.Footer{
+    width: 100vw;
+    display: flex;
+    padding: 5rem;
+    font-weight: 300;
+    font-size: small;
+    background: green;
+    color: white;
+}
+.Footer-Left{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    /* border: 2px solid red; */
+}
+.Footer-details{
+    display: flex;
+}
+.footerLogo{
+    object-fit: cover;
+    height: 6rem;
+    width: 7rem;
+}
+.Footer-orgName{
+   margin-left: -2px;
+   padding: 5px;
+   /* border: 2px solid black; */
+}
+.Footer-orgName h1{
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.underline-footer{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    margin: 5px auto;
+}
+.Footer-orgName h2{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    font-size: 12.5px;
+}
+.Footer-copyright{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer-menu{
+    width: 20vw;
+    height: 20vh;
+    padding: 8px;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 70%;
+    cursor: pointer;
+}
+.aboutFooter, .servicesFooter, .contactFooter{
+    margin-top: 10px;
+}
+.footer-menu a{
+    padding-bottom: 0.2rem;
+}
+.homeFooter:hover {
+    border-bottom: 3.5px solid white; 
+    width: fit-content;
+}
+.aboutFooter:hover {
+    border-bottom: 3.5px solid white; 
+    width: fit-content;
+}
+.servicesFooter:hover {
+    border-bottom: 3.5px solid white; 
+    width: fit-content;
+
+}
+.contactFooter:hover {
+    border-bottom: 3.5px solid white; 
+    width: fit-content; 
+}
+.navbar-icon {
+    margin-right: 8px;
+}
+
+/* --------------------------css for small screen--------------------------------------- */
+
+@media screen and (max-width:600px) {
+    .Footer{
+      display: flex;
+      justify-content: center;
+      justify-content: space-between;
+    }
+    .Footer-Left{
+        /* border: 2px solid red; */
+        width: 100%;
+        /* margin-left: -40px; */
+        margin-top: -15px;
+    }
+    .footerLogo{
+        object-fit: cover;
+        height: 5rem;
+        width: 6rem;
+    }
+    .Footer-orgName{
+       padding: 0px;
+       margin-left: 2px;
+       /* border: 2px solid black; */
+       width: 100%;
+       margin-top: 5px;
+    }
+    .Footer-orgName h1{
+        font-size: 11.5px;
+    }
+    .underline-footer{
+        max-width: 100%;
+    }
+    .Footer-orgName h2{
+        font-size: 7.5px;
+    }
+    .Footer-copyright{
+        margin-top: 15px;
+        font-size: 10px;
+        /* border: 2px solid black; */
+        line-height: 2;
+
+    }
+    .Footer-Right{
+        margin-right: -40px;
+        gap: 3px;
+        margin-top: -15px;
+        /* border: 2px solid black; */
+        display: none;
+    }
+    .footer-menu{
+        width: 21vw;
+        font-size: 10px;
+        margin-left: 5%;
+        gap: 0px;
+        padding: 3px;
+    }
+    .navbar-icon {
+        font-size: 11px;
+        margin-right: 3px;
+    }
+ }
+ 

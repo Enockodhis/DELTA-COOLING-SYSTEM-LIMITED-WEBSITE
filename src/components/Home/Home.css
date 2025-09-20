@@ -1,0 +1,100 @@
+#Home {
+  height: calc(100vh - 8rem);
+  width: 100vw;
+  max-height: calc(100vh - 8rem);
+  margin: 0 auto;
+  position: relative;
+  /* margin: 30px auto; */
+  overflow: hidden;
+  background-image: url("../../assets/backgroundImage.png"); /* Update path if necessary */
+  background-size: cover; /* Makes the image cover the entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+}
+.home-contents {
+  position: absolute; /* Changed from relative to absolute for better positioning */
+  z-index: 1;
+  color: white;
+  padding: 2vw 20px; /* Reduced padding-top and padding-bottom */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5vw;
+  max-width: 40%;
+  top: 50%; /* Center vertically */
+  left: 6vw;
+  transform: translateY(-50%); /* Adjust to perfectly center */
+  animation: fadeIn 3s;
+  font-weight: bolder;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background: rgba(0, 0, 0, 0.5); /* Optional: adds a semi-transparent background for better text visibility */
+}
+
+.home-contents h3 {
+  font-weight: 500;
+  /* color: white; */
+  color: #f0f0f0; /* Light gray to increase contrast */
+  font-size: max(4.5vw, 22px);
+  margin-bottom: 20px;
+}
+.home-contents p {
+  /* color: white; */
+  color: #dcdcdc; /* Slightly lighter gray */
+  font-size: 20px;
+}
+
+.home-contents button {
+  padding: 10px 20px;
+  font-size: max(1vw, 16px);
+  font-weight: 500;
+  padding: 1vw 2.3vw;
+  border-radius: 50px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 2; /* Ensure button is above everything */
+  margin-top: 30px;
+}
+
+button:hover {
+  background-color: green;
+}
+
+/* --------------------------css for small screen--------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  #Home {
+    height: 58vh;
+  }
+  .background-video {
+    width: 100%;
+    height: 100vh;
+  }
+  /* .home-contents{
+     margin-top: 100px;
+     flex-direction: column;
+     align-items: start;
+     left: 2vw;
+     max-width: 80%;
+  } */
+  .home-contents {
+    max-width: 80%; /* Increased width for smaller screens */
+    left: 40%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    padding: 4vw 10px; /* Adjusted padding for better spacing */
+  }
+  .home-contents h3 {
+    font-size: max(3.8vw, 21px);
+  }
+  .home-contents p {
+    font-size: 15px;
+  }
+  .home-contents button {
+    font-size: max(1.5vw, 13px);
+    padding: 1.7vw;
+    width: 35vw;
+  }
+}

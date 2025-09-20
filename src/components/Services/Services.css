@@ -1,0 +1,411 @@
+#services{
+  margin: 0 auto;
+  max-width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 2 1rem;
+}
+/* --- Services Title --- */
+.services-title {
+  max-width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+.services-title h6 {
+  font-size: 2.8rem;
+  color: green;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+.services-title h7 {
+  font-size: 2.2rem;
+  color: blue;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.services-title p {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin: 0 auto;
+  max-width: 80%;
+  text-align: start;
+}
+
+/* --- Range of Business Activities --- */
+.business-container {
+  max-width: 75%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.business-container h2 {
+  font-size: 2.5rem;
+  color: blue;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-style: normal;
+}
+.business-container p {
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card  {
+  font-size: 2.5rem;
+  margin-right: 1.5rem;
+}
+.card h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.card p {
+  font-size: 1.8rem;
+}
+  
+/* --- Detailed Services Info --- */
+.servicesInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+  margin: 50px auto;
+  gap: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.servicesAbout {
+  flex: 1;
+  margin: 0 25px;
+  text-align: left;
+}
+
+.servicesAbout h5 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  margin-bottom: 15px;
+  color: blue;
+}
+
+.servicesAbout p {
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: 25px;
+}
+
+.servicesImage {
+  flex: 1;
+  text-align: center;
+}
+
+img {
+  object-fit: cover;
+  height: 35rem;
+  width: 35rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+/* Why Choose Us Section */
+.why-choose-us-container {
+    padding: 50px 70px;
+    background-color: #f7f7f7;
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+  }
+  
+  .section-title {
+    font-size: 4.5rem;
+    margin-bottom: 30px;
+    color: blue;
+    font-style: normal;
+  }
+  
+  .reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 60px;
+  }
+  
+  .reason-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 40px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .reason-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .icon-container {
+    font-size: 4.5rem;
+    color: blue;
+    margin-bottom: 15px;
+  }
+  
+  .reason-title {
+    font-size: 2.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .reason-description {
+    font-size: 1.2rem;
+  }
+
+  /* ---- Brand Names */
+  .brands-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .brand-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-style: normal;
+  }
+  
+  .brand-description {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+  
+  .brand-logos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 items per row */
+    grid-template-rows: auto auto; /* Two rows */
+    gap: 20px; /* Space between items */
+    justify-items: center; /* Center the items within the grid */
+  }
+  
+  .brand-item {
+    width: 100%;
+    padding: 10px;
+    background-color: #f9f9f9; /* Card-like appearance */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for card effect */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .brand-item img {
+    width: 100%;
+    height: auto;
+    max-height: 120px;
+    object-fit: contain;
+  }
+  
+  .brand-item:hover {
+    transform: scale(1.1);
+  }
+  
+/* --------------------------css for small screen--------------------------------------- */
+
+@media screen and (max-width:600px) {
+  #services{
+    box-shadow: none;
+  }
+  /* --- Services Title --- */
+  .services-title {
+    max-width: 100%;
+  }
+  .services-title h6 {
+    margin-top: -1rem;
+    font-size: 1.1rem;
+  }
+  .services-title h7 {
+    font-size: 1.2rem;
+  }
+  .services-title p {
+    font-size: 1rem;
+    line-height: 1rem;
+    max-width: 100%;
+  }
+/* --- Range of Business Activities --- */
+.business-container {
+  max-width: 100%;
+}
+  .business-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: -5rem;
+  }
+  .business-container p {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .card {
+    padding: 1rem;
+    max-width: 100%;
+    align-items: center;
+  }
+  .card {
+    font-size: 2rem;
+  }
+  .card h3 {
+    font-size: 1.1rem;
+  }
+  .card p {
+    font-size: 1rem;
+  }
+    /* --- Detailed Services Info --- */
+    .servicesInfo {
+      display: flex;
+      max-width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin: 10px auto;
+      padding: 10px;
+      text-align: left;
+    }
+    
+    .servicesAbout {
+      flex: 1;
+      margin: 0;
+      padding-right: 10px;
+    }
+    
+    .servicesAbout h5 {
+      font-size: 10px;
+      margin-bottom: 2px;
+    }
+    
+    .servicesAbout p {
+      font-size: 8.5px;
+      line-height: 1;
+      margin-bottom: 10px;
+      color: black;
+    }
+    
+    .servicesImage {
+      flex-shrink: 0;
+      width: 100px;
+      margin: auto 0;
+    }
+    
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+      max-height: 100px; 
+      border-radius: 10px;
+    }
+  /* -----------Why Choose Us Section------------ */
+  .why-choose-us-container {
+     padding: 0px 10px;
+     max-width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin-bottom: 3px;
+     /* border: 2px solid black; */
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 0px;
+    padding-top: 5px;
+  }
+  
+  .reasons-grid {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+  }
+  
+  .reason-card {
+    padding: 5px 0px;
+    gap: 0;
+    max-width: 84%;
+    /* border: 2px solid red; */
+  }
+
+  .icon-container {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    /* border: 2px solid green; */
+  }
+  
+  .reason-title {
+    font-size: 1.1rem;
+    margin: auto;
+  }
+  
+  .reason-description {
+    font-size: 1rem;
+  }
+
+  /* ---- Brand Names */
+  .brands-container {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .brand-title {
+    font-size: 2rem;
+  }
+
+  .brand-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .brand-logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
+    gap: 10px;
+  }
+
+  .brand-item {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .brand-item img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100px;
+  }
+}
+
+
+
+  
+ 

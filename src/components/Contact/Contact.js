@@ -136,7 +136,7 @@ const Contact = () => {
     </div>
       <div className="mapLocation">
           <a
-            href="https://www.google.com/maps/place/Delta+Cooling+Systems/@-1.3199582,36.9025354,17z/data=!3m1!4b1!4m6!3m5!1s0x182f11a9c4b7c3cd:0xda99cee89922afc1!8m2!3d-1.3199582!4d36.9025354!16s%2Fg%2F11j7dcqc5q!5m1!1e1?entry=ttu&g_ep=EgoyMDI0MTAwNy4xIKXMDSoASAFQAw%3D%3D"
+            href="https://www.google.com/maps/dir/-1.2458948,36.8949213/Delta+Cooling+Systems+Limited/data=!4m10!4m9!1m1!4e1!1m5!1m4!1s0x182f11ec9567fdd3:0xbc76af47f3ae2259!8m2!3d-1.3267605!4d36.8532436!3e0"
             target="_blank"
             rel="noopener noreferrer"
             className="direction-link"
@@ -150,7 +150,7 @@ const Contact = () => {
           {/* Embed Google Map iframe to show the route */}
           <iframe
             title="Google Map of Delta Cooling Systems"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.01869914294!2d36.9025354!3d-1.3199582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11a9c4b7c3cd%3A0xda99cee89922afc1!2sDelta%20Cooling%20Systems!5e0!3m2!1sen!2ske!4v1696957163419!5m2!1sen!2ske"
+            src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d31860.0466287245!2d36.8949213!3d-1.2458948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x0%3A0x0!2zLTFsIDI0JzM1LjIiUyAzNsKwNTMnNDMuNyJF!3m2!1d-1.2458948!2d36.8949213!4m5!1s0x182f11ec9567fdd3%3A0xbc76af47f3ae2259!2sDelta%20Cooling%20Systems%20Limited!3m2!1d-1.3267605!2d36.8532436!5e0!3m2!1sen!2ske!4v1695200000000"
             width="95%"
             height="400px"
             style={{ border: 0, 

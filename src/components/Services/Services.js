@@ -254,9 +254,9 @@ const Services = () => {
           <div className="brand-item">
             <img src={Toshiba} alt="Toshiba" />
           </div>
-          <div className="brand-item">
+          {/* <div className="brand-item">
             <img src={Samsung} alt="Samsung" />
-          </div>
+          </div> */}
           <div className="brand-item">
             <img src={Bosch} alt="Bosch" />
           </div>

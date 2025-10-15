@@ -18,7 +18,7 @@ import Bitzer from "../../assets/bitzer.png";
 import Daikin from "../../assets/daikin.png";
 import Airdale from "../../assets/airdale.png";
 import Toshiba from "../../assets/toshiba.png";
-import Samsung from "../../assets/samsung.png";
+// import Samsung from "../../assets/samsung.png";
 import Systemair from "../../assets/systemair.png";
 import LG from "../../assets/lifegood.png";
 import Airmaster from "../../assets/airmaster.png";

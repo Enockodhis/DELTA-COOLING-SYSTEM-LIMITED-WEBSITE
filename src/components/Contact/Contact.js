@@ -77,11 +77,11 @@ const Contact = () => {
         </div>
         <div className="contact-Location">
           <h3>Office Location</h3>
-          <p>GODOWN NO.4 NEXT TO UNIPRO</p>
-          <p>ROAD C BEHIND VISION PLAZA</p>
-          <p>OFF MOMBASA ROAD.</p>
-          <p>P.O BOX 12915 – 00100</p>
-          <p>NAIROBI - KENYA</p>
+          <p>GODOWN NO.4 NEXT TO UNIPRO,</p>
+          <p>ROAD C BEHIND VISION PLAZA,</p>
+          <p>OFF MOMBASA ROAD,</p>
+          <p>P.O BOX 12915 – 00100,</p>
+          <p>NAIROBI - KENYA.</p>
         </div>
       </div>
       <div className="contactForm">

@@ -16,7 +16,7 @@ const Footer = () => {
              </div>
         </div>
         <div className='Footer-copyright'>
-            Copyright  &#169;  2025 DELTA COOLING SYSTEMS LIMITED All Rights Reserved
+            Copyright  &#169;  2026 DELTA COOLING SYSTEMS LIMITED All Rights Reserved
         </div>
      </div>
      <div className='Footer-Right'>
